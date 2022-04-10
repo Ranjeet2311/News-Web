@@ -1,0 +1,17 @@
+.top-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  img {
+    width: 400px;
+    height: 300px;
+  }
+  h1 {
+    margin: 6px 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Public Sans", sans-serif;
+  }
+}

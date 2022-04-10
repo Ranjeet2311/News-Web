@@ -1,0 +1,31 @@
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  position: relative;
+  background-color: rgb(225, 223, 223);
+
+  @include at-900px {
+    width: 100%;
+  }
+
+  .new-pop-up {
+    position: absolute;
+    left: -1rem;
+  }
+
+  h1 {
+    margin: 14px 4px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Public Sans", sans-serif;
+    text-align: center;
+
+    // @include at-600px {
+    //   font-size: 12px;
+    // }
+  }
+}

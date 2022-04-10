@@ -1,0 +1,17 @@
+.news-display {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .search-news-display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
