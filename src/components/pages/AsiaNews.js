@@ -19,7 +19,7 @@ function AsiaNews() {
   };
 
   useEffect(() => {
-    asiasData();
+    // asiasData();
   }, []);
 
   return (

@@ -36,8 +36,8 @@ function All() {
   };
 
   useEffect(() => {
-    newsData();
-    topNewsData();
+    // newsData();
+    // topNewsData();
   }, []);
 
   return (
