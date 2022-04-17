@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SingleNews from "../SingleNews";
 import SubHeader from "../SubHeader";
+import { data } from "../BaseData";
+
 function UsNews() {
   const [usNews, setUsNews] = useState([]);
 
@@ -18,15 +20,15 @@ function UsNews() {
   };
 
   useEffect(() => {
-    usData();
+    // usData();
   }, []);
 
   return (
     <div className="news-display">
       <SubHeader title="USA News" />
       <div className="news">
-        {usNews &&
-          usNews.map((news, i) => {
+        {data &&
+          data.map((news, i) => {
             // return console.log(news.title);
             return (
               <SingleNews

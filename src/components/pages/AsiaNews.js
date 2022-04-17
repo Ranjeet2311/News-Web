@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SingleNews from "../SingleNews";
 import SubHeader from "../SubHeader";
+import { data } from "../BaseData";
 
 function AsiaNews() {
   const [asiaNews, setAsiaNews] = useState([]);
@@ -25,8 +26,8 @@ function AsiaNews() {
     <div className="news-display">
       <SubHeader title="Asia News" />
       <div className="news">
-        {asiaNews &&
-          asiaNews.map((news, i) => {
+        {data &&
+          data.map((news, i) => {
             return (
               <SingleNews
                 key={i}

@@ -43,9 +43,9 @@ function All() {
   return (
     <div className="news-display">
       <MainSectionNews
-        topNews={topNews}
+        // topNews={topNews}
         altdata={data}
-        topHeadlines={topHeadlines}
+        // topHeadlines={topHeadlines}
       />
       <SubHeader title="Tech News" />
       <SectionNews topNews={techData} />
