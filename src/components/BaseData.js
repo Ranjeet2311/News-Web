@@ -999,5 +999,5 @@ const techData = [
   },
 ];
 
-export default data;
-export { sportData, techData };
+// export default data;
+export { data, sportData, techData };

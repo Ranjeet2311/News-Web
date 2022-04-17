@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { sportData, techData } from "../BaseData";
+import { data, sportData, techData } from "../BaseData";
 import SectionNews from "../SectionNews";
 import MainSectionNews from "../MainSectionNews";
 import SubHeader from "../SubHeader";
@@ -42,7 +42,11 @@ function All() {
 
   return (
     <div className="news-display">
-      <MainSectionNews topNews={topNews} topHeadlines={topHeadlines} />
+      <MainSectionNews
+        topNews={topNews}
+        altdata={data}
+        topHeadlines={topHeadlines}
+      />
       <SubHeader title="Tech News" />
       <SectionNews topNews={techData} />
       <SubHeader title="Sport News" />
